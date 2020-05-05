@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>My CSS Website</title>
+    <link rel="stylesheet" href="Styles.css">
+
+</head>
+
+<body>
+    <nav>
+     <ul class="topnav" id="koraa">
+         <li> <a href="#Home">Home</a></li>
+         <li> <a href="#news">News</a></li>
+         <li> <a href="#contact">Contact</a></li>
+         <li> <a href="#about">About</a></li>
+         <li class="topnav-right"> <a href="#signup">Sign Up</a></li>
+         <li class="topnav-right"> <a href="#signin">Sign In</a></li>
+         <li class="dropdownicon" > <a href="javascript:viod(0);" onclick="JV_Menu()">&#9776;</a></li>
+        </ul>       
+    </nav>
+  
+    
+    <script>
+        function JV_Menu(){
+            var x = document.getElementById("koraa");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+            } else {
+              x.className = "topnav";  
+            }
+        }
+        
+    </script>
+    
+  
+</body>
+
+</html>
